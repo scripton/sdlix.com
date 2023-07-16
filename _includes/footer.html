@@ -1,0 +1,49 @@
+<!-- Footer-->
+<footer {% if page.url == "/" %} class="pt-4" {% else %} class="pt-4 footer" {% endif %}>
+    <div class="container">
+        <div class="container-fluid text-center">
+
+            <div class="row">
+
+                <!-- Brand -->
+                <div class="col-md-3 my-3 text-md-left">
+                    <div class="row"><span class="footer-brand">{{site.name}}</span></div>
+                </div>
+
+                <!-- Explore -->
+                <div class="col-md-3 offset-md-1 my-3 text-md-left">
+                    <h3>Explore</h3>
+
+                    <ul class="footer-list text-uppercase ml-auto">
+                        <li class="fl-item"><a class="footer-link" href="/#services">Services</a></li>
+                        <li class="fl-item"><a class="footer-link" href="/#about">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 my-3 text-md-left">
+                    <h3>Contact</h3>
+
+                    <ul class="footer-list text-uppercase ml-auto">
+                        <li class="fl-item"><a class="footer-link" href="mailto:{{site.email}}">{{site.email}}</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row text-center">
+              <h3 class="m-auto footer-tech">This site was developed using</h3>
+            </div>
+
+            <div class="technologies row text-center">
+              <a class="col-md-2" target="_blank" href="https://jekyllrb.com/"><img alt="jekyll" height="48" src="/img/tech/jekyll.svg" /></a>
+              <a class="col-md-2" target="_blank" href="https://www.nginx.com/"><img alt="nginx" height="48" src="/img/tech/nginx-1.svg" /></a>
+              <a class="col-md-2" target="_blank" href="https://aws.amazon.com/"><img alt="aws-amazon" height="48" src="/img/tech/aws-2.svg" /></a>
+              <a class="col-md-2" target="_blank" href="https://www.docker.com/"><img alt="docker" height="48" src="/img/tech/docker.svg" /></a>
+              <a class="col-md-2" target="_blank" href="https://www.w3.org/TR/html52/"><img alt="html5" height="48" src="/img/tech/html-5.svg" /></a>
+              <a class="col-md-2" target="_blank" href="https://sass-lang.com/"><img alt="sass" height="48" src="/img/tech/sass-1.svg" /></a>
+            </div>
+            <div class="footer-cr text-center">Copyright © {{site.name}} {{'now' | date: "%Y"}} </div>
+        </div>
+    </div>
+
+</footer>

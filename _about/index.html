@@ -1,0 +1,57 @@
+---
+title: About sdLix
+layout: default
+permalink: about
+---
+
+<h1>About SdLix</h1>
+
+<section id="team" class="page-section">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Meet the Team</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+
+        <div class="row justify-content-md-center team-members">
+
+            {% for bio in site.bio %}
+
+            <div class="col-md-4 col-sm-12 mx-auto">
+                <div class="team-member">
+
+                    <div class="member-info">
+                        <a href="{{ bio.url }}">
+                            <img class="mx-auto member-img" src="{{ bio.img }}" alt="">
+                            <h4>{{ bio.name }}</h4>
+                            <p class="text-muted">{{ bio.role }}</p>
+                            <p class="member-intro">{{ bio.intro }}</p>
+                        </a>
+                    </div>
+
+                    <div class="member-links row justify-content-between">
+                        <div class="col-md-6">
+                            <a href="{{ bio.url }}" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-dark btn-social" href="{{ bio.linkedInUrl }}"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            </div>
+
+        </div>
+</section>

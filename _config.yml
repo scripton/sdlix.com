@@ -1,0 +1,35 @@
+# Site settings
+name: "sdLix"
+description: "Software technology done right"
+email: "info@sdlix.com"
+
+url: "https://sdlix.com" # the base hostname & protocol for your site
+baseurl: ''
+
+source: .
+
+# Founders/Bio
+collections:
+    bio:
+        output: true
+
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-minifier
+
+# Enable ES6 support in minifier
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+# CSS
+sass:
+    style: :compressed
+    sass_dir: css
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+include: ['_pages']

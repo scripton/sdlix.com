@@ -1,0 +1,37 @@
+---
+title: sdLix
+layout: default
+permalink: /
+---
+
+<!-- About -->
+<section id="profile" class="page-section">
+    <div class="container">
+
+        <div class="text-center">
+            {% capture profile %}{% include sections/profile.md %}{% endcapture %}
+            {{ profile | markdownify }}
+        </div>
+
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="page-section">
+    <div class="container">
+        {% capture services %}{% include sections/services.md %}{% endcapture %}
+        {{ services | markdownify }}
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="page-section">
+    {% capture about %}{% include sections/about.md %}{% endcapture %}
+    {{ about | markdownify }}
+</section>
+
+<!-- Contact -->
+<section id="contact" class="page-section">
+        {% capture contact %}{% include sections/contact.md %}{% endcapture %}
+        {{ contact | markdownify }}
+</section>
